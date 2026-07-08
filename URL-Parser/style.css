@@ -1,0 +1,42 @@
+body{
+    background-color: #181818;
+    text-align: center;
+}
+
+h1{
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#url-parser-data{
+    width: fit-content;
+    padding: 15px;
+    border: 1px solid yellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#parserinput{
+    width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#btn{
+    background-color: rgb(0, 255, 174);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+#btn:hover{
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 5px;
+}
+#url-parser-data{
+    text-align: left;
+    width: fit-content;
+    margin:20px auto;
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding :10px;
+}
