@@ -1,6 +1,6 @@
 # 🔐 JWT Token Decoder
 
-A lightweight JavaScript-based JWT Token Decoder that decodes JSON Web Tokens (JWTs) and displays the **Header**, **Payload**, and **Signature** in a clean and easy-to-read interface. This project was built to practice JavaScript fundamentals while learning about authentication tokens commonly used in web application security.
+A lightweight JavaScript-based JWT Token Decoder that decodes JSON Web Tokens (JWTs) and displays the **Header**, **Payload**, and **Signature** in a clean, user-friendly interface. This project was built to practice JavaScript fundamentals while learning how JWT authentication works in modern web applications and web security.
 
 <img width="782" height="542" alt="Image" src="https://github.com/user-attachments/assets/8953b9a0-5b85-4630-9664-93e99af9dbf1" />
 
@@ -39,7 +39,7 @@ A lightweight JavaScript-based JWT Token Decoder that decodes JSON Web Tokens (J
 ## 📂 Project Structure
 
 ```text
-jwt-decoder/
+JWT-Decoder/
 │
 ├── index.html
 ├── style.css
@@ -54,7 +54,13 @@ jwt-decoder/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/Code1nception/JS-Mini-Cybersecurity-projects/JWT-Decoder.git
+git clone https://github.com/Code1nception/JS-Mini-Cybersecurity-projects.git
+```
+
+### Navigate to the project
+
+```bash
+cd JS-Mini-Cybersecurity-projects/JWT-Decoder
 ```
 
 ### Open the project
@@ -94,29 +100,31 @@ KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqIp-QV30
 
 ## 📚 What I Learned
 
-- Understanding the structure of a JWT (Header, Payload, Signature)
-- Using `atob()` to decode Base64-encoded JWT components
-- Parsing JSON data using `JSON.parse()`
-- Using `Object.entries()` to dynamically display key-value pairs
-- Building dynamic HTML with template literals
-- Handling invalid tokens using `try...catch`
-- Implementing copy-to-clipboard functionality with the Clipboard API
-- Creating a responsive card-based UI using HTML and CSS
+- Understanding the structure of a JWT (Header, Payload, and Signature)
+- Decoding Base64-encoded data using the browser's `atob()` function
+- Parsing JSON objects with `JSON.parse()`
+- Iterating through objects dynamically using `Object.entries()`
+- Creating dynamic HTML with template literals
+- Updating the DOM using `innerHTML`
+- Handling invalid input with `try...catch`
+- Implementing Copy-to-Clipboard functionality using the Clipboard API
+- Building a clean card-based UI with HTML and CSS
 
 ---
 
 ## 🚀 Future Improvements
 
 - Support Base64URL decoding (JWT standard)
-- Verify JWT signatures
 - Convert `exp`, `iat`, and `nbf` timestamps into readable dates
 - Display token expiration status (Valid / Expired)
-- Copy entire decoded token as JSON
+- JWT Signature verification
 - Export decoded data as JSON
+- Dark / Light theme
 - Mobile-responsive layout
-- Dark/Light theme toggle
+- Drag & Drop JWT input
 
 ---
+
 
 ## 👨‍💻 Author
 
