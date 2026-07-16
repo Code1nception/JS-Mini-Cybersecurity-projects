@@ -66,3 +66,20 @@ body{
     font-size:18px;
     font-weight:bold;
 }
+.card-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.copy-btn{
+    background:gold;
+    border:none;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.copy-btn:hover{
+    background:orange;
+}
