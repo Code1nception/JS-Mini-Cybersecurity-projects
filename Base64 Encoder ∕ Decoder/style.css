@@ -1,0 +1,515 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: #080b10;
+
+    color: #d8dee9;
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+}
+
+
+/* APP */
+
+.app {
+    width: 92%;
+    max-width: 1050px;
+
+    margin: auto;
+}
+
+
+/* TOP BAR */
+
+.topbar {
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #202630;
+}
+
+
+/* BRAND */
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #39424f;
+
+    color: #7dd3fc;
+
+    font-size: 22px;
+}
+
+.brand h1 {
+    margin: 0;
+
+    color: #f8fafc;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+}
+
+.brand p {
+    margin: 5px 0 0;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* STATUS */
+
+.status {
+    color: #64748b;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.status-dot {
+    display: inline-block;
+
+    width: 7px;
+    height: 7px;
+
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    background: #22c55e;
+}
+
+
+/* HERO */
+
+.hero {
+    padding: 75px 0 50px;
+
+    max-width: 700px;
+}
+
+.eyebrow {
+    color: #38bdf8;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    margin: 18px 0;
+
+    color: #f8fafc;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 52px;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.hero h2 span {
+    color: #64748b;
+}
+
+.hero p {
+    max-width: 600px;
+
+    color: #718096;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* WORKSPACE */
+
+.workspace {
+    display: grid;
+
+    grid-template-columns: 1fr 130px 1fr;
+
+    gap: 18px;
+
+    align-items: center;
+}
+
+
+/* PANELS */
+
+.panel {
+    background: #0d1117;
+
+    border: 1px solid #252c35;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+}
+
+.panel-header {
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+
+    border-bottom: 1px solid #252c35;
+
+    color: #cbd5e1;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.panel-number {
+    margin-right: 10px;
+
+    color: #38bdf8;
+}
+
+.panel-label {
+    color: #475569;
+
+    font-size: 9px;
+}
+
+
+/* TEXTAREA */
+
+textarea {
+    display: block;
+
+    width: 100%;
+    height: 250px;
+
+    padding: 18px;
+
+    resize: none;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #e2e8f0;
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+textarea::placeholder {
+    color: #3f4a58;
+}
+
+textarea:focus {
+    background: #0f141b;
+}
+
+
+/* OUTPUT ACTIONS */
+
+.output-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    padding: 10px 15px;
+
+    border-top: 1px solid #252c35;
+}
+
+
+/* ACTION BUTTONS */
+
+.actions {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.actions button {
+    width: 100%;
+
+    padding: 12px 8px;
+
+    border: 1px solid #334155;
+
+    border-radius: 4px;
+
+    background: #111827;
+
+    color: #cbd5e1;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.actions button span {
+    color: #38bdf8;
+
+    margin-right: 5px;
+}
+
+.actions button:hover {
+    border-color: #38bdf8;
+
+    background: #111c28;
+
+    color: #f8fafc;
+}
+
+
+/* COPY BUTTON */
+
+#copy-btn {
+    padding: 6px 12px;
+
+    border: 1px solid #334155;
+
+    border-radius: 3px;
+
+    background: transparent;
+
+    color: #94a3b8;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+#copy-btn:hover {
+    border-color: #38bdf8;
+
+    color: #38bdf8;
+}
+
+
+/* BOTTOM */
+
+.bottom-grid {
+    display: flex;
+
+    align-items: stretch;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+
+/* INFORMATION */
+
+.info-card {
+    flex: 1;
+
+    display: flex;
+
+    gap: 14px;
+
+    padding: 18px;
+
+    border: 1px solid #252c35;
+
+    background: #0d1117;
+
+    border-radius: 6px;
+}
+
+.card-icon {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 1px solid #854d0e;
+
+    color: #facc15;
+
+    font-weight: bold;
+}
+
+.info-card h3 {
+    margin: 0 0 7px;
+
+    color: #cbd5e1;
+
+    font-size: 12px;
+}
+
+.info-card p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* CLEAR BUTTON */
+
+.clear-btn {
+    width: 170px;
+
+    border: 1px solid #334155;
+
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: #64748b;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.clear-btn:hover {
+    border-color: #ef4444;
+
+    color: #f87171;
+
+    background: #160d0d;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+
+    justify-content: center;
+
+    padding: 35px 0;
+
+    color: #334155;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .workspace {
+        grid-template-columns: 1fr;
+    }
+
+    .actions {
+        flex-direction: row;
+
+        order: 2;
+    }
+
+    .output-panel {
+        order: 3;
+    }
+
+    .actions button {
+        flex: 1;
+    }
+
+    .bottom-grid {
+        flex-direction: column;
+    }
+
+    .clear-btn {
+        width: 100%;
+
+        min-height: 50px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .app {
+        width: 94%;
+    }
+
+    .topbar {
+        height: 75px;
+    }
+
+    .status {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    textarea {
+        height: 200px;
+    }
+}
