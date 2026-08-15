@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Base64 Security Utility</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="topbar">
+
+            <div class="brand">
+                <span class="brand-icon">⌘</span>
+
+                <div>
+                    <h1>Base64 Security Utility</h1>
+                    <p>Encoding & decoding workstation</p>
+                </div>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                LOCAL TOOL
+            </div>
+
+        </header>
+
+
+        <main>
+
+            <section class="hero">
+
+                <span class="eyebrow">
+                    DATA ENCODING TOOL
+                </span>
+
+                <h2>
+                    Encode. Decode.<br>
+                    <span>Inspect the data.</span>
+                </h2>
+
+                <p>
+                    Convert text to Base64 or decode Base64 data
+                    directly in your browser.
+                </p>
+
+            </section>
+
+
+            <section class="workspace">
+
+                <!-- INPUT -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="panel-number">01</span>
+                            <span>INPUT</span>
+                        </div>
+
+                        <span class="panel-label">
+                            RAW DATA
+                        </span>
+
+                    </div>
+
+                    <textarea
+                        id="input-text"
+                        placeholder="Enter text or Base64 data..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- ACTIONS -->
+
+                <div class="actions">
+
+                    <button id="encode-btn">
+                        <span>→</span>
+                        Encode
+                    </button>
+
+                    <button id="decode-btn">
+                        <span>←</span>
+                        Decode
+                    </button>
+
+                </div>
+
+
+                <!-- OUTPUT -->
+
+                <div class="panel output-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="panel-number">02</span>
+                            <span>OUTPUT</span>
+                        </div>
+
+                        <span class="panel-label">
+                            RESULT
+                        </span>
+
+                    </div>
+
+                    <textarea
+                        id="output-text"
+                        placeholder="Result will appear here..."
+                        readonly
+                    ></textarea>
+
+                    <div class="output-actions">
+
+                        <button id="copy-btn">
+                            Copy
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- INFORMATION -->
+
+            <section class="bottom-grid">
+
+                <div class="info-card">
+
+                    <div class="card-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <h3>Security Note</h3>
+
+                        <p>
+                            Base64 is encoding, not encryption.
+                            Encoded information can be decoded
+                            without a secret key.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <button id="clear-btn" class="clear-btn">
+                    Clear Workspace
+                </button>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+            BASE64-UTIL • HTML • CSS • VANILLA JAVASCRIPT
+        </footer>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
