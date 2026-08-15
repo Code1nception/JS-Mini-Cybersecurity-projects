@@ -8,7 +8,7 @@ This project was created as part of my JavaScript learning journey, with a focus
 
 ## 📸 Preview
 
-<!-- Add your GitHub screenshot here -->
+<img width="727" height="595" alt="Image" src="https://github.com/user-attachments/assets/d1f54c34-830d-47fd-b0ce-ebc82d73b660" />
 
 ---
 
@@ -216,7 +216,7 @@ cd JS-Mini-Cybersecurity-projects
 Open the Base64 Encoder & Decoder project folder.
 
 ```bash
-cd Base64-Encoder-Decoder
+cd Base64 Encoder∕Decoder
 ```
 
 ### Run the Project
@@ -292,24 +292,6 @@ Through this project, I practiced:
 * It does not provide encryption
 * It does not provide secure storage
 * It does not analyze cryptographic security
-
----
-
-## 🔮 Future Improvements
-
-Possible improvements for future versions:
-
-* [ ] Add Unicode-safe Base64 encoding and decoding
-* [ ] Add Base64 URL-safe encoding
-* [ ] Add file encoding and decoding
-* [ ] Add drag-and-drop file support
-* [ ] Add input/output character counters
-* [ ] Add download functionality
-* [ ] Improve validation messages
-* [ ] Add encoding format detection
-* [ ] Add unit tests
-* [ ] Improve accessibility
-* [ ] Add additional encoding utilities
 
 ---
 
