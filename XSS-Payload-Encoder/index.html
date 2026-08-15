@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XSS Payload Encoder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="topbar">
+
+            <div>
+                <span class="label">XSS LAB</span>
+
+                <h1>Payload Encoder</h1>
+
+                <p>
+                    Encode payloads for authorized web security testing.
+                </p>
+            </div>
+
+            <div class="status">
+                <span></span>
+                LOCAL TOOL
+            </div>
+
+        </header>
+
+
+        <div class="workspace">
+
+
+            <!-- INPUT PANEL -->
+
+            <section class="input-panel">
+
+                <div class="section-title">
+
+                    <span>01</span>
+
+                    <h2>Payload Input</h2>
+
+                </div>
+
+
+                <label for="input-text">
+                    Enter payload or text
+                </label>
+
+
+                <textarea
+                    id="input-text"
+                    placeholder="<script>alert(1)</script>"
+                ></textarea>
+
+
+                <div class="actions">
+
+                    <button id="encode-btn">
+                        Encode Payload
+                    </button>
+
+                    <button id="clear-btn" class="secondary">
+                        Clear
+                    </button>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <strong>Authorized Testing Only</strong>
+
+                    <p>
+                        Use this tool only with applications
+                        you own or have permission to test.<br><br>
+                    </p>
+                    <h4>*** EDUCATIONAL PURPOSES ONLY ***</h4>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- OUTPUT PANEL -->
+
+            <section class="output-panel">
+
+                <div class="section-title">
+
+                    <span>02</span>
+
+                    <h2>Encoded Representations</h2>
+
+                </div>
+
+
+                <!-- URL -->
+
+                <div class="output-block">
+
+                    <div class="output-title">
+
+                        <span>URL ENCODED</span>
+
+                        <button
+                            class="copy-btn"
+                            data-target="url-output">
+                            Copy
+                        </button>
+
+                    </div>
+
+                    <textarea
+                        id="url-output"
+                        readonly
+                        placeholder="Waiting for input..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- HTML -->
+
+                <div class="output-block">
+
+                    <div class="output-title">
+
+                        <span>HTML ENCODED</span>
+
+                        <button
+                            class="copy-btn"
+                            data-target="html-output">
+                            Copy
+                        </button>
+
+                    </div>
+
+                    <textarea
+                        id="html-output"
+                        readonly
+                        placeholder="Waiting for input..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- UNICODE -->
+
+                <div class="output-block">
+
+                    <div class="output-title">
+
+                        <span>UNICODE</span>
+
+                        <button
+                            class="copy-btn"
+                            data-target="unicode-output">
+                            Copy
+                        </button>
+
+                    </div>
+
+                    <textarea
+                        id="unicode-output"
+                        readonly
+                        placeholder="Waiting for input..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- HEX -->
+
+                <div class="output-block">
+
+                    <div class="output-title">
+
+                        <span>HEX</span>
+
+                        <button
+                            class="copy-btn"
+                            data-target="hex-output">
+                            Copy
+                        </button>
+
+                    </div>
+
+                    <textarea
+                        id="hex-output"
+                        readonly
+                        placeholder="Waiting for input..."
+                    ></textarea>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <footer>
+
+            XSS Payload Encoder
+            <span>•</span>
+            HTML / URL / Unicode / Hex
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
