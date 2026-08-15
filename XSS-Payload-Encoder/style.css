@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    background: #080b10;
+
+    color: #d1d5db;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+.app {
+    width: 92%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 40px 0;
+}
+
+
+/* TOP BAR */
+
+.topbar {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #1f2937;
+}
+
+
+.label {
+    color: #22c55e;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+
+h1 {
+    margin: 8px 0;
+
+    color: #f9fafb;
+
+    font-size: 38px;
+}
+
+
+.topbar p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+.status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 12px;
+
+    border: 1px solid #1f2937;
+
+    color: #6b7280;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+.status span {
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #22c55e;
+}
+
+
+/* WORKSPACE */
+
+.workspace {
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.4fr;
+
+    margin-top: 30px;
+
+    border: 1px solid #1f2937;
+
+    background: #0d1117;
+}
+
+
+/* PANELS */
+
+.input-panel,
+.output-panel {
+    padding: 28px;
+}
+
+
+.input-panel {
+    border-right: 1px solid #1f2937;
+}
+
+
+.section-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+.section-title span {
+    color: #22c55e;
+
+    font-family: monospace;
+
+    font-size: 12px;
+}
+
+
+.section-title h2 {
+    margin: 0;
+
+    color: #f3f4f6;
+
+    font-size: 17px;
+}
+
+
+/* INPUT */
+
+label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #6b7280;
+
+    font-size: 12px;
+}
+
+
+textarea {
+    width: 100%;
+
+    resize: vertical;
+
+    padding: 14px;
+
+    border: 1px solid #273244;
+
+    outline: none;
+
+    background: #070a0f;
+
+    color: #d1fae5;
+
+    font-family: monospace;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+#input-text {
+    min-height: 180px;
+}
+
+
+textarea:focus {
+    border-color: #22c55e;
+}
+
+
+textarea::placeholder {
+    color: #374151;
+}
+
+
+/* BUTTONS */
+
+.actions {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+
+button {
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+#encode-btn {
+    flex: 1;
+
+    padding: 12px;
+
+    background: #22c55e;
+
+    color: #041007;
+}
+
+
+#encode-btn:hover {
+    background: #16a34a;
+}
+
+
+.secondary {
+    padding: 12px 18px;
+
+    background: #1f2937;
+
+    color: #d1d5db;
+}
+
+
+.secondary:hover {
+    background: #374151;
+}
+
+
+/* INFO */
+
+.info-box {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border-left: 2px solid #f59e0b;
+
+    background: #15120b;
+}
+
+
+.info-box strong {
+    color: #fbbf24;
+
+    font-size: 12px;
+}
+
+
+.info-box h4{
+    color:darkred;
+}
+
+.info-box p {
+    margin: 7px 0 0;
+
+    color: #6b7280;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+
+/* OUTPUT */
+
+.output-block {
+    margin-bottom: 18px;
+}
+
+
+.output-title {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 7px;
+}
+
+
+.output-title span {
+    color: #9ca3af;
+
+    font-family: monospace;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+.copy-btn {
+    padding: 5px 10px;
+
+    border: 1px solid #273244;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+
+.copy-btn:hover {
+    border-color: #22c55e;
+
+    color: #22c55e;
+}
+
+
+.output-block textarea {
+    min-height: 70px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding-top: 25px;
+
+    color: #374151;
+
+    font-family: monospace;
+
+    font-size: 11px;
+
+    text-align: center;
+}
+
+footer span {
+    margin: 0 8px;
+
+    color: #22c55e;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .app {
+        width: 94%;
+
+        padding-top: 25px;
+    }
+
+
+    .topbar {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+    .workspace {
+        grid-template-columns: 1fr;
+    }
+
+
+    .input-panel {
+        border-right: none;
+
+        border-bottom: 1px solid #1f2937;
+    }
+
+
+    .input-panel,
+    .output-panel {
+        padding: 20px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .actions {
+        flex-direction: column;
+    }
+
+
+    #encode-btn,
+    .secondary {
+        width: 100%;
+    }
+
+}
